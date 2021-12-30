@@ -30,7 +30,8 @@ nav {
   border-radius: 10px;
   margin: 10px;
 }
-.col p {
+
+p {
   margin: 45px;
 }
 
@@ -39,7 +40,8 @@ nav {
   padding: 0 20px 0 20px;
   border-radius: 10px;
 }
-#box1 a, #box2 a, #box3 a {
+
+a {
   text-decoration: none;
   color: black;
   font-style: italic;
@@ -50,7 +52,8 @@ nav {
   padding: 10px 20px 0px 20px;
   border-radius: 10px;
 }
-.card .btn {
+
+.btn {
   background-color: #d8ac79;
   border-color: #cd9453;
   margin-bottom: 65px;
@@ -60,9 +63,11 @@ nav {
 #carouselExampleCaptions {
   width: 750px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 10px;
+  margin: 10px 10px 10px 0px;
+  border-radius: 10px;
 }
-#carouselExampleCaptions h5 ~ p {
+
+h5 ~ p {
   font-style: italic;
 }
 
@@ -81,10 +86,12 @@ footer {
   border: #e9d0b3 solid 2px;
   background-color: #d8ac79;
 }
-footer table {
+
+table {
   margin: 10px;
 }
-footer table #logoHorse {
+
+#logoHorse {
   padding: 10px;
   width: 70px;
 }

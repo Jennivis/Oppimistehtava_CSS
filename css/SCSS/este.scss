@@ -1,9 +1,16 @@
 $bg-color: #f8f1e8;
 $cont-color: #f3e8d9;
 $hl-color: #e9d0b3;
+$f-color: #d8ac79;
 
-@mixin theme ($theme: null) {
+@mixin shadow ($theme: null) {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin a-style ($theme: black) {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
 }
 
 body {
@@ -26,12 +33,13 @@ nav {
 /*Sivun sisältö*/
 .container {
     text-align: center;
-    .col {
-        background-color: $cont-color;
-        border-radius: 10px;
-        padding-top: 20px;
-        margin: 10px  
-    }
+}
+
+.col {
+    background-color: $cont-color;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin: 10px  
 }
 
 img {
@@ -44,11 +52,10 @@ h3 {
 
 p {
     padding: 20px;
-    a {
-        text-decoration: none;
-        color: black;
-        font-style: italic;
-    }
+}
+
+a {
+    @include a-style;
 }
 
 .card {
@@ -56,24 +63,26 @@ p {
     padding: 10px 10px 0px 10px;
     border-radius: 10px;
     border: none;
-    ul {
-        list-style-type: none;
-    }
-    .img-fluid {
-        margin: 20px;
-    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.img-fluid {
+    margin: 20px;
 }
 
 #jumpimg {
     margin: 20px;
     width: 300px;
-    @include theme;
+    @include shadow;
 }
 
 #smallpic {
     margin: 20px;
     width: 300px;
-    @include theme;
+    @include shadow;
 }
 
 /*Alatunniste*/
@@ -85,14 +94,16 @@ footer {
     text-align: center;
     border-radius: 10px;
     border: $hl-color solid 2px;
-    background-color: #d8ac79;
-    table {
-        margin: 10px;
-        #logoHorse {
-            padding: 10px;
-            width: 70px;
-        }
-    }
+    background-color: $f-color;
+}
+
+table {
+    margin: 10px;
+}
+
+#logoHorse {
+    padding: 10px;
+    width: 70px;
 }
 
 /*Responsiivisuus*/
