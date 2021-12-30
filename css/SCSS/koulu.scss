@@ -45,32 +45,29 @@ nav {
 .col {
     border-radius: 10px;
     margin: 10px;
-}
-
-p {
-    margin: 45px;
+    p {
+        margin: 45px;
+    }
 }
 
 #box1, #box2, #box3 {
     background-color: $cont-color;
     padding: 0 20px 0 20px;
     border-radius: 10px;
-}
-
-a {
-    @include a-style;
+    a {
+        @include a-style;
+    }
 }
 
 .card {
     background-color: $cont-color;
     padding: 10px 20px 0px 20px;
     border-radius: 10px;
-}
-
-.btn {
-    background-color: $button-color;
-    border-color: #cd9453;
-    margin-bottom: 65px;
+    .btn {
+        background-color: $button-color;
+        border-color: #cd9453;
+        margin-bottom: 65px;
+    }
 }
 
 /*Sivun sisällössä oleva kuvakaruselli*/
@@ -78,10 +75,9 @@ a {
     width: 750px;
     @include shadow;
     border-radius: 10px;
-}
-
-h5 ~ p {
-    font-style: italic;
+    h5 ~ p {
+        font-style: italic;
+    }
 }
 
 #box3 {
@@ -97,16 +93,14 @@ footer {
     flex-direction: column;
     text-align: center;
     border: $hl-color solid 2px;
-    background-color: $f-color;      
-}
-
-table {
-    margin: 10px;
-}
-
-#logoHorse {
-    padding: 10px;
-    width: 70px;
+    background-color: $f-color;   
+    table {
+        margin: 10px;
+        #logoHorse {
+            padding: 10px;
+            width: 70px;
+        }
+    }  
 }
 
 /*Responsiivisuus*/

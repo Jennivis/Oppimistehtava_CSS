@@ -20,8 +20,7 @@ nav {
 .container {
   text-align: center;
 }
-
-.col {
+.container .col {
   background-color: #f3e8d9;
   border-radius: 10px;
   padding-top: 20px;
@@ -39,8 +38,7 @@ h3 {
 p {
   padding: 20px;
 }
-
-a {
+p a {
   text-decoration: none;
   color: black;
   font-style: italic;
@@ -52,12 +50,10 @@ a {
   border-radius: 10px;
   border: none;
 }
-
-ul {
+.card ul {
   list-style-type: none;
 }
-
-.img-fluid {
+.card ul .img-fluid {
   margin: 20px;
 }
 
@@ -84,12 +80,10 @@ footer {
   border: #e9d0b3 solid 2px;
   background-color: #d8ac79;
 }
-
-table {
+footer table {
   margin: 10px;
 }
-
-#logoHorse {
+footer table #logoHorse {
   padding: 10px;
   width: 70px;
 }

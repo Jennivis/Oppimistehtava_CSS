@@ -8,8 +8,7 @@ body {
   margin: 10px;
   border-radius: 10px;
 }
-
-.carousel-item > img {
+#carouselExampleSlidesOnly .carousel-item > img {
   border-radius: 5px;
 }
 
@@ -24,14 +23,12 @@ nav {
 .container {
   text-align: center;
 }
-
-.col {
+.container .col {
   background-color: #f3e8d9;
   border-radius: 10px;
   margin: 10px;
 }
-
-p {
+.container .col p {
   padding: 50px 50px 25px 50px;
   font-size: 1.2em;
   font-style: italic;
@@ -48,8 +45,7 @@ p {
   border-radius: 5px;
   padding-top: 12px;
 }
-
-a {
+.accordion a {
   text-decoration: none;
   color: black;
   font-style: italic;
@@ -58,8 +54,7 @@ a {
 #col-background {
   background-color: #f8f1e8;
 }
-
-#pic1, #pic2, #pic3 {
+#col-background #pic1, #col-background #pic2, #col-background #pic3 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 10px;
 }
@@ -79,12 +74,10 @@ footer {
   border: #e9d0b3 solid 2px;
   background-color: #d8ac79;
 }
-
-table {
+footer table {
   margin: 10px;
 }
-
-#logoHorse {
+footer table #logoHorse {
   padding: 10px;
   width: 70px;
 }

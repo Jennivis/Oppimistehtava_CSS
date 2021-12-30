@@ -29,9 +29,9 @@ body {
 #carouselExampleSlidesOnly {
     margin: 10px;
     border-radius: 10px;
-}
-.carousel-item > img {
-    border-radius: 5px;
+    .carousel-item > img {
+        border-radius: 5px;
+    }
 }
 
 /*Navbar*/
@@ -43,17 +43,15 @@ nav {
 
 /*Sivun sisältö*/
 .container {
-    text-align: center;   
-}
-
-.col {
-    background-color: $cont-color;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-p {
-    @include textstyle;         
+    text-align: center;
+    .col {
+        background-color: $cont-color;
+        border-radius: 10px;
+        margin: 10px;
+        p {
+            @include textstyle;         
+        }
+    }
 }
 
 .btn, .btn-primary {
@@ -66,18 +64,16 @@ p {
     margin: 10px;
     border-radius: 5px;
     padding-top: 12px;
-}
-
-a {
-    @include a-style;
+    a {
+        @include a-style;
+    }
 }
 
 #col-background {
     background-color: $bg-color;
-}
-
-#pic1, #pic2, #pic3 {
-    @include shadow;       
+    #pic1, #pic2, #pic3 {
+        @include shadow;       
+    }
 }
 
 #col-background > img {
@@ -94,13 +90,14 @@ footer {
     text-align: center;
     border: $hl-color solid 2px;
     background-color: $f-color;
+    table {
+        margin: 10px;
+        #logoHorse {
+            padding: 10px;
+            width: 70px;
+        }
+    }
 }
 
-table {
-    margin: 10px;
-}
 
-#logoHorse {
-    padding: 10px;
-    width: 70px;
-}
+
